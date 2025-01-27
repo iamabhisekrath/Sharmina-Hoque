@@ -11,20 +11,6 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
-
-// testimonials.js
-document.addEventListener("DOMContentLoaded", () => {
-  const testimonials = document.querySelectorAll(".testimonial");
-  let index = 0;
-
-  setInterval(() => {
-    testimonials.forEach((testimonial, i) => {
-      testimonial.style.display = i === index ? "block" : "none";
-    });
-    index = (index + 1) % testimonials.length;
-  }, 3000); // Change every 3 seconds
-});
-
 /*===== REMOVE MENU MOBILE =====*/
 const navLink = document.querySelectorAll('.nav__link')
 
