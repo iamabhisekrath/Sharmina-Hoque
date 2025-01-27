@@ -6,6 +6,12 @@
     --header-height: 3rem;
     --font-medium: 500;
 }
+.about-text {
+  color: white;
+}
+.about-text small {
+  color: white;
+}
 
 /*===== Colores =====*/
 :root{
