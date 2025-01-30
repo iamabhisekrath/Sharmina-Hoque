@@ -593,3 +593,26 @@ img {
 .call-to-action:hover {
     background-color: #4153B0;
 }
+.home__subtitle {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em; /* Reduce the margin-bottom */
+    text-align: center; /* Center align the text */
+}
+
+.call-to-action {
+    background-color: white; /* Change button background to white */
+    color: #5361FF; /* Change text color to match the theme */
+    border: 2px solid #5361FF; /* Add a border to the button */
+    padding: 0.5em 1em; /* Adjust padding */
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for color change */
+    margin-top: 0.5em; /* Add margin at the top to move it closer to the tagline */
+}
+
+.call-to-action:hover {
+    background-color: #5361FF; /* Hover state background */
+    color: white; /* Hover state text color */
+}
