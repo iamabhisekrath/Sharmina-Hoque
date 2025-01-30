@@ -29,15 +29,12 @@
     --text-color: #E0E0E0;
 }
 
-@media screen and (min-width: 768px) {
-    :root {
-        --big-font-size: 10.5rem;
-        --h2-font-size: 2rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-    }
+.dark-theme {
+    --first-color: #A29BFE;
+    --white-color: #2A3B47;
+    --dark-color: #FAFAFF;
+    --text-color: #E0E0E0;
 }
-
 /*===== BASE =====*/
 *, ::before, ::after {
     box-sizing: border-box;
