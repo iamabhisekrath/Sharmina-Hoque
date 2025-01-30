@@ -180,7 +180,26 @@ img{
     top: 2rem;
     background-color: var(--first-color);
 }
+.home__subtitle {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 1em;
+}
 
+.call-to-action {
+    background-color: #5361FF;
+    color: white;
+    border: none;
+    padding: 0.75em 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action:hover {
+    background-color: #4153B0;
+}
 /*===== HOME =====*/
 .home{
     position: relative;
