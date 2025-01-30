@@ -215,6 +215,7 @@ img {
     color: var(--white-color);
     line-height: 1.2;
     margin-bottom: var(--mb-2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Light shadow effect */
 }
 
 .home__tagline {
@@ -257,7 +258,6 @@ img {
     bottom: 0;
     width: 295px;
 }
-
 /*===== ABOUT =====*/
 .about__container {
     justify-items: center;
