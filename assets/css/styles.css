@@ -374,7 +374,6 @@ img {
 .portfolio__link-name {
     color: var(--dark-color);
 }
-
 /*===== TESTIMONIALS =====*/
 .testimonials__container {
     display: grid;
@@ -411,8 +410,9 @@ img {
 }
 
 .testimonial__author {
-    font-size: var(--h2-font-size);
+    font-size: 1rem; /* Reduced font size */
     color: var(--first-color);
+    margin-top: var(--mb-1);
 }
 
 /*===== CERTIFICATIONS =====*/
@@ -451,8 +451,9 @@ img {
 }
 
 .certification__title {
-    font-size: var(--h2-font-size);
+    font-size: 1rem; /* Reduced font size */
     color: var(--first-color);
+    margin-top: var(--mb-1);
 }
 
 /*===== CONTACT =====*/
