@@ -175,27 +175,6 @@ img {
     background-color: var(--first-color);
 }
 
-.home__subtitle {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 1em;
-}
-
-.call-to-action {
-    background-color: #5361FF;
-    color: white;
-    border: none;
-    padding: 0.75em 1.5em;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.call-to-action:hover {
-    background-color: #4153B0;
-}
-
 /*===== HOME =====*/
 .home {
     position: relative;
@@ -208,23 +187,6 @@ img {
     row-gap: 5rem;
 }
 
-.home__button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 10px 20px;
-    background: #5361FF;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-.home__button:hover {
-    background: #A29BFE;
-}
-
 .home__title {
     align-self: flex-end;
     font-size: var(--big-font-size);
@@ -234,6 +196,30 @@ img {
 
 .home__title span {
     text-shadow: 0 20px 25px rgba(0, 0, 0, .5);
+}
+
+.home__subtitle {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.call-to-action {
+    background-color: white;
+    color: #5361FF;
+    border: 2px solid #5361FF;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 0.5em;
+}
+
+.call-to-action:hover {
+    background-color: #5361FF;
+    color: white;
 }
 
 .home__scroll {
@@ -435,7 +421,7 @@ img {
 }
 
 .footer__link:hover {
-    color: var (--first-color);
+    color: var(--first-color);
 }
 
 .footer__social {
@@ -572,65 +558,4 @@ img {
         width: 500px;
         right: 24%;
     }
-}
-.home__subtitle {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 1em;
-}
-
-.call-to-action {
-    background-color: #5361FF;
-    color: white;
-    border: none;
-    padding: 0.75em 1.5em;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.call-to-action:hover {
-    background-color: #4153B0;
-}
-.home__subtitle {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 0.5em; /* Reduce the margin-bottom */
-    text-align: center; /* Center align the text */
-}
-
-.call-to-action {
-    background-color: white; /* Change button background to white */
-    color: #5361FF; /* Change text color to match the theme */
-    border: 2px solid #5361FF; /* Add a border to the button */
-    padding: 0.5em 1em; /* Adjust padding */
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for color change */
-    margin-top: 0.5em; /* Add margin at the top to move it closer to the tagline */
-}
-.home__subtitle {
-    text-align: center; /* Center the text */
-    font-size: 1.5rem; /* Adjust font size */
-    color: white; /* Make sure it contrasts well */
-    margin-top: -10px; /* Adjust vertical position */
-}
-.home__button {
-    display: inline-block; 
-    background: #fff; /* Button color */
-    color: #5361FF; /* Text color */
-    padding: 12px 20px; /* Adjust padding */
-    font-size: 1rem;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px; /* Reduce space between text and button */
-    text-align: center;
-}
-
-
-.call-to-action:hover {
-    background-color: #5361FF; /* Hover state background */
-    color: white; /* Hover state text color */
 }
