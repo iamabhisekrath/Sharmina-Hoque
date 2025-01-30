@@ -10,105 +10,13 @@
     
     <!-- Box Icons -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    
-    <!-- Custom Styles for Testimonials and Certifications -->
-    <style>
-        /* Testimonials Section Styling */
-        .testimonials {
-            background: linear-gradient(135deg, #5361FF, #A29BFE);
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-        }
-        .testimonials__container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .testimonial {
-            background: white;
-            color: #333;
-            padding: 2rem;
-            border-radius: 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .testimonial:hover {
-            transform: translateY(-10px);
-        }
-        .testimonial__img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin: 0 auto 1rem;
-            overflow: hidden;
-        }
-        .testimonial__img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .testimonial__text {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            font-style: italic;
-        }
-        .testimonial__author {
-            font-weight: bold;
-            font-size: 1.1rem;
-            color: #5361FF;
-        }
-
-        /* Certifications Section Styling */
-        .certifications {
-            background: #f4f4f4;
-            padding: 3rem 0;
-            text-align: center;
-        }
-        .certifications__container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .certification {
-            background: white;
-            padding: 2rem;
-            border-radius: 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .certification__img {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto 1rem;
-        }
-        .certification__img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        .certification__text {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-        }
-        .certification__title {
-            font-weight: bold;
-            font-size: 1.2rem;
-            color: #5361FF;
-        }
-    </style>
 </head>
 <body>
     <!--===== HEADER =====-->
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <b href="#" class="nav__logo">SHARMINA HOQUE</b>
+                <a href="#" class="nav__logo">SHARMINA HOQUE</a>
             </div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -124,23 +32,27 @@
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
+            <!-- Dark/Light Mode Toggle -->
+            <div class="theme-toggle">
+                <i class='bx bx-moon' id="theme-icon"></i>
+            </div>
         </nav>
     </header>
 
     <!--===== MAIN CONTENT =====-->
     <main class="l-main">
         <!--===== HOME =====-->
-<section class="home" id="home">
-    <div class="home__container bd-grid">
-        <h1 class="home__title"><span>HE</span><br>LLO</h1>
-        <p class="home__tagline">Transform your ONLINE PRESENT.</p>
-        <a href="#contact" class="home__button">BOOK A CALL NOW!</a>
-        <div class="home__scroll">
-            <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt'></i>Scroll down</a>
-        </div>
-        <img src="assets/img/profile.png" alt="" class="home__img">
-    </div>
-</section>
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <h1 class="home__title"><span>HE</span>LLO</h1>
+                <p class="home__tagline">Transform your ONLINE PRESENCE</p>
+                <a href="https://meet.google.com" target="_blank" class="home__button">BOOK A CALL NOW!</a>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt'></i>Scroll down</a>
+                </div>
+                <img src="assets/img/profile.png" alt="" class="home__img">
+            </div>
+        </section>
 
         <!--===== ABOUT =====-->
         <section class="about section" id="about">
@@ -166,7 +78,7 @@
         <section class="skills section" id="skills">
             <h2 class="section-title">Services</h2>
             <div class="skills__container bd-grid">
-                <div class="skills__box">
+                <div>
                     <h3 class="skills__subtitle">Services</h3>
                     <span class="skills__name" style="font-weight: bold; font-size: 1.2em;">Lead Generation</span>
                     <span class="skills__name" style="font-weight: bold; font-size: 1.2em;">Market Research</span>
@@ -216,12 +128,6 @@
                 </div>
                 <div class="portfolio__img">
                     <img src="assets/img/graphicdesign.jpg" alt="">
-                    <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View details</a>
-                    </div>
-                </div>
-                <div class="portfolio__img">
-                    <img src="" alt="">
                     <div class="portfolio__link">
                         <a href="#" class="portfolio__link-name">View details</a>
                     </div>
