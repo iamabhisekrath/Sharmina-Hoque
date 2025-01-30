@@ -67,7 +67,6 @@ sr.reveal('.contact__input', { delay: 400 });
 sr.reveal('.contact__button', { delay: 600 });
 
 /*===== DARK/LIGHT MODE TOGGLE =====*/
-/*===== DARK/LIGHT MODE TOGGLE =====*/
 const themeToggle = document.querySelector('.theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 
@@ -95,4 +94,3 @@ if (savedTheme === 'dark') {
     themeIcon.classList.remove('bx-sun');
     themeIcon.classList.add('bx-moon');
 }
-
