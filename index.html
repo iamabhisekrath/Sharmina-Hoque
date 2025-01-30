@@ -312,6 +312,149 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio with Enhanced Testimonials & Certifications</title>
+    <style>
+        /* Certifications Section Styling */
+        .certifications {
+            background: #f4f4f4;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .certifications__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .certification {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .certification__img {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1rem;
+        }
+        .certification__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .certification__text {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .certification__title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #5361FF;
+        }
+    </style>
+</head>
+<body>
+    <!-- Existing Header -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <b href="#" class="nav__logo">SHARMINA HOQUE</b>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
+                    <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!-- Existing Sections -->
+
+        <!-- Certifications Section -->
+        <section class="certifications section" id="certifications">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications__container bd-grid">
+                <div class="certification">
+                    <div class="certification__img">
+                        <img src="assets/img/cert1.jpg" alt="Certification 1">
+                    </div>
+                    <p class="certification__text">"Certified in Advanced Digital Marketing from XYZ Institute."</p>
+                    <h3 class="certification__title">- Google Digital Marketing</h3>
+                </div>
+                <div class="certification">
+                    <div class="certification__img">
+                        <img src="assets/img/cert2.jpg" alt="Certification 2">
+                    </div>
+                    <p class="certification__text">"Professional SEO Specialist - Industry Recognized."</p>
+                    <h3 class="certification__title">- HubSpot SEO Certification</h3>
+                </div>
+                <div class="certification">
+                    <div class="certification__img">
+                        <img src="assets/img/cert3.jpg" alt="Certification 3">
+                    </div>
+                    <p class="certification__text">"Expert in Google Ads & PPC Strategy."</p>
+                    <h3 class="certification__title">- Google Ads Certification</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">Sharmina Hoque</h2>
+                    <p class="footer__text">I'm Sharmina and this is my personal website</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#testimonials" class="footer__link">Testimonials</a></li>
+                        <li><a href="#certifications" class="footer__link">Certifications</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
