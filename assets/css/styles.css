@@ -221,7 +221,7 @@ img {
     }
 
     .home__button {
-        margin-top: var(--mb-1); /* Add margin to the button */
+        margin-top: var(--mb-2); /* Add margin to the button */
     }
 }
 .home {
