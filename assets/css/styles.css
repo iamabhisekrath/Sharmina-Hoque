@@ -215,7 +215,7 @@ img {
 }
 
 /* Media Query for Mobile View */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .home__img {
         width: 200px; /* Reduce image size for mobile */
         bottom: 10%; /* Adjust position */
@@ -249,7 +249,7 @@ img {
 }
 
 /* Media Query for Mobile View */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .home__container {
         padding-left: var(--mb-2); /* Reduce padding for mobile */
     }
