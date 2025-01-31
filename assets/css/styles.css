@@ -20,18 +20,24 @@
     --mb-4: 2rem;
     --z-fixed: 100;
 }
+
 /* Dark Mode Variables */
-.dark-theme {
+[data-theme="dark"] {
     --first-color: #A29BFE;
     --white-color: #2A3B47;
     --dark-color: #FAFAFF;
     --text-color: #E0E0E0;
 }
 
-/* Ensure the home section background remains blue in dark mode */
-.dark-theme .home {
-    background-color: var(--first-color); /* Blue background */
+@media screen and (min-width: 768px) {
+    :root {
+        --big-font-size: 10.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
 }
+
 /*===== BASE =====*/
 *, ::before, ::after {
     box-sizing: border-box;
@@ -185,8 +191,14 @@ img {
     top: 2rem;
     background-color: var(--first-color);
 }
+
 /*===== HOME =====*/
-/*===== HOME =====*/
+.home {
+    position: relative;
+    background-color: var(--first-color); /* Blue background */
+    overflow: hidden;
+}
+
 .home__container {
     height: calc(100vh - var(--header-height));
     row-gap: 1.5rem;
@@ -206,82 +218,6 @@ img {
     margin-bottom: var(--mb-2);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Light shadow effect */
     align-self: flex-start; /* Ensure "HELLO" aligns to the left */
-}
-
-/* Media Query for Mobile View */
-@media screen and (max-width: 768px) {
-    .home__container {
-        padding-left: var(--mb-2); /* Reduce padding for mobile */
-    }
-
-    .home__title {
-        font-size: 4rem; /* Adjust font size for mobile */
-    }
-}
-.home__container {
-    height: calc(100vh - var(--header-height));
-    row-gap: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: left;
-    padding-left: var(--mb-4);
-    position: relative; /* Add this */
-}
-
-
-    /*===== HOME =====*/
-.home__img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 295px;
-    z-index: 1; /* Ensure the image is behind the content */
-}
-
-/* Media Query for Mobile View */
-@media screen and (max-width: 768px) {
-    .home__img {
-        width: 200px; /* Reduce image size for mobile */
-        bottom: 10%; /* Adjust position */
-        right: 10%; /* Adjust position */
-    }
-
-    .home__button {
-        margin-top: var(--mb-2); /* Add margin to the button */
-        z-index: 2; /* Ensure the button is above the image */
-    }
-}
-.home {
-    position: relative;
-    background-color: var(--first-color); /* Blue background */
-    overflow: hidden;
-}
-
-.home__container {
-    height: calc(100vh - var(--header-height));
-    row-gap: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* Align content to the left */
-    text-align: left; /* Align text to the left */
-    padding-left: var(--mb-4); /* Add some padding to the left */
-}
-
-.home__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.home__title {
-    font-size: var(--big-font-size);
-    color: var(--white-color);
-    line-height: 1.2;
-    margin-bottom: var(--mb-2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Light shadow effect */
 }
 
 .home__tagline {
@@ -323,7 +259,31 @@ img {
     right: 0;
     bottom: 0;
     width: 295px;
+    z-index: 1; /* Ensure the image is behind the content */
 }
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .home__container {
+        padding-left: var(--mb-2); /* Reduce padding for mobile */
+    }
+
+    .home__title {
+        font-size: 4rem; /* Adjust font size for mobile */
+    }
+
+    .home__img {
+        width: 200px; /* Reduce image size for mobile */
+        bottom: 10%; /* Adjust position */
+        right: 10%; /* Adjust position */
+    }
+
+    .home__button {
+        margin-top: var(--mb-2); /* Add margin to the button */
+        z-index: 2; /* Ensure the button is above the image */
+    }
+}
+
 /*===== ABOUT =====*/
 .about__container {
     justify-items: center;
@@ -440,6 +400,7 @@ img {
 .portfolio__link-name {
     color: var(--dark-color);
 }
+
 /*===== TESTIMONIALS =====*/
 .testimonials__container {
     display: grid;
@@ -565,7 +526,7 @@ img {
     font-size: var(--normal-font-size);
     cursor: pointer;
 }
-/*===== FOOTER =====*/
+
 /*===== FOOTER =====*/
 .footer {
     background-color: var(--dark-color);
@@ -623,129 +584,5 @@ img {
 
     .footer__data {
         margin-bottom: var(--mb-2);
-    }
-}
-/*===== MEDIA QUERIES =====*/
-@media screen and (max-width: 320px) {
-    .home__img {
-        width: 230px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    body {
-        margin: 0;
-    }
-
-    .section {
-        padding-top: 4rem;
-    }
-
-    .section-title {
-        margin-bottom: 3rem;
-    }
-
-    .section-title::after {
-        width: 64px;
-        top: 3rem;
-    }
-
-    .nav {
-        height: calc(var(--header-height) + 1rem);
-    }
-
-    .nav__list {
-        display: flex;
-    }
-
-    .nav__item {
-        margin-left: var(--mb-4);
-        margin-bottom: 0;
-    }
-
-    .nav__toggle {
-        display: none;
-    }
-
-    .nav__link {
-        color: var(--white-color);
-    }
-
-    .nav__link:hover {
-        color: var(--white-color);
-    }
-
-    .active::after {
-        background-color: var(--white-color);
-    }
-
-    .home__container {
-        height: 100vh;
-        grid-template-rows: 1.7fr 1fr;
-        row-gap: 0;
-    }
-
-    .home__img {
-        width: 524px;
-        right: 10%;
-    }
-
-    .about__container {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        text-align: initial;
-        padding: 4rem 0;
-    }
-
-    .about__img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .about__img img {
-        width: 165px;
-    }
-
-    .skills__container {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-    }
-
-    .portfolio__container {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        column-gap: 2rem;
-    }
-
-    .contact__container {
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-    }
-
-    .contact__form {
-        width: 380px;
-    }
-
-    .footer__container {
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .bd-grid {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-height: 721px) {
-    .home__container {
-        height: 640px;
-    }
-
-    .home__img {
-        width: 500px;
-        right: 24%;
     }
 }
