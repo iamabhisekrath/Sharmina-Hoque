@@ -20,7 +20,6 @@
     --mb-4: 2rem;
     --z-fixed: 100;
 }
-
 /* Dark Mode Variables */
 .dark-theme {
     --first-color: #A29BFE;
@@ -33,7 +32,6 @@
 .dark-theme .home {
     background-color: var(--first-color); /* Blue background */
 }
-
 /*===== BASE =====*/
 *, ::before, ::after {
     box-sizing: border-box;
@@ -189,12 +187,8 @@ img {
 }
 
 /*===== HOME =====*/
-.home {
-    position: relative;
-    background-color: var(--first-color); /* Blue background */
-    overflow: hidden;
-}
 
+/*===== HOME =====*/
 .home__container {
     height: calc(100vh - var(--header-height));
     row-gap: 1.5rem;
@@ -204,7 +198,7 @@ img {
     align-items: flex-start;
     text-align: left;
     padding-left: var(--mb-4);
-    position: relative;
+    position: relative; /* Add this */
 }
 
 .home__img {
@@ -212,12 +206,37 @@ img {
     right: 0;
     bottom: 0;
     width: 295px;
-    z-index: 1;
+    z-index: 1; /* Ensure the image is behind the content */
 }
 
 .home__content {
-    z-index: 2;
-    position: relative;
+    z-index: 2; /* Ensure the content is above the image */
+    position: relative; /* Add this */
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .home__img {
+        width: 200px; /* Reduce image size for mobile */
+        bottom: 10%; /* Adjust position */
+        right: 10%; /* Adjust position */
+    }
+
+    .home__button {
+        margin-top: var(--mb-2); /* Add margin to the button */
+    }
+}
+/*===== HOME =====*/
+.home__container {
+    height: calc(100vh - var(--header-height));
+    row-gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the left */
+    text-align: left; /* Align text to the left */
+    padding-left: var(--mb-4); /* Add padding to the left */
+    position: relative; /* Add this */
 }
 
 .home__title {
@@ -225,8 +244,36 @@ img {
     color: var(--white-color);
     line-height: 1.2;
     margin-bottom: var(--mb-2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    align-self: flex-start;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Light shadow effect */
+    align-self: flex-start; /* Ensure "HELLO" aligns to the left */
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .home__container {
+        padding-left: var(--mb-2); /* Reduce padding for mobile */
+    }
+
+    .home__title {
+        font-size: 4rem; /* Adjust font size for mobile */
+    }
+}
+.home {
+    position: relative;
+    background-color: var(--first-color); /* Blue background */
+    overflow: hidden;
+}
+.home__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home__title {
+    font-size: var(--big-font-size);
+    color: var(--white-color);
+    line-height: 1.2;
+    margin-bottom: var(--mb-2);
 }
 
 .home__tagline {
@@ -245,7 +292,6 @@ img {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     transition: background-color 0.3s, color 0.3s;
-    margin-top: var(--mb-2); /* Add margin to the button */
 }
 
 .home__button:hover {
@@ -253,18 +299,22 @@ img {
     color: var(--white-color);
 }
 
-/* Media Query for Mobile View */
-@media screen and (max-width: 768px) {
-    .home__img {
-        width: 200px;
-        bottom: 10%;
-        right: 10%;
-    }
+.home__scroll {
+    align-self: flex-end;
+    padding-bottom: var(--mb-4);
+}
 
-    .home__button {
-        position: relative;
-        top: -10px; /* Adjust this value to move the button up */
-    }
+.home__scroll-link {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    color: var(--white-color);
+}
+
+.home__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 290px;
 }
 
 /*===== ABOUT =====*/
@@ -383,7 +433,6 @@ img {
 .portfolio__link-name {
     color: var(--dark-color);
 }
-
 /*===== TESTIMONIALS =====*/
 .testimonials__container {
     display: grid;
@@ -420,7 +469,7 @@ img {
 }
 
 .testimonial__author {
-    font-size: 1rem;
+    font-size: 1rem; /* Reduced font size */
     color: var(--first-color);
     margin-top: var(--mb-1);
 }
@@ -461,7 +510,7 @@ img {
 }
 
 .certification__title {
-    font-size: 1rem;
+    font-size: 1rem; /* Reduced font size */
     color: var(--first-color);
     margin-top: var(--mb-1);
 }
