@@ -187,6 +187,8 @@ img {
 }
 
 /*===== HOME =====*/
+
+/*===== HOME =====*/
 .home__container {
     height: calc(100vh - var(--header-height));
     row-gap: 1.5rem;
@@ -203,7 +205,7 @@ img {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 290px;
+    width: 295px;
     z-index: 1; /* Ensure the image is behind the content */
 }
 
@@ -215,7 +217,7 @@ img {
 /* Media Query for Mobile View */
 @media screen and (max-width: 768px) {
     .home__img {
-        width: 190px; /* Reduce image size for mobile */
+        width: 200px; /* Reduce image size for mobile */
         bottom: 10%; /* Adjust position */
         right: 10%; /* Adjust position */
     }
