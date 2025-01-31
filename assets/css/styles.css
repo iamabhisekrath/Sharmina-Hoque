@@ -221,7 +221,9 @@ img {
         bottom: 10%; /* Adjust position */
         right: 10%; /* Adjust position */
     }
-
+.button-class {
+    margin-top: -20px; /* Adjust this value to move it up */
+}
     .home__button {
         margin-top: var(--mb-2); /* Add margin to the button */
     }
