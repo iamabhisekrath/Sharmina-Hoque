@@ -186,6 +186,38 @@ img {
     background-color: var(--first-color);
 }
 /*===== HOME =====*/
+/*===== HOME =====*/
+.home__container {
+    height: calc(100vh - var(--header-height));
+    row-gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the left */
+    text-align: left; /* Align text to the left */
+    padding-left: var(--mb-4); /* Add padding to the left */
+    position: relative; /* Add this */
+}
+
+.home__title {
+    font-size: var(--big-font-size);
+    color: var(--white-color);
+    line-height: 1.2;
+    margin-bottom: var(--mb-2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Light shadow effect */
+    align-self: flex-start; /* Ensure "HELLO" aligns to the left */
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .home__container {
+        padding-left: var(--mb-2); /* Reduce padding for mobile */
+    }
+
+    .home__title {
+        font-size: 4rem; /* Adjust font size for mobile */
+    }
+}
 .home__container {
     height: calc(100vh - var(--header-height));
     row-gap: 1.5rem;
@@ -198,17 +230,14 @@ img {
     position: relative; /* Add this */
 }
 
+
+    /*===== HOME =====*/
 .home__img {
     position: absolute;
     right: 0;
     bottom: 0;
     width: 295px;
     z-index: 1; /* Ensure the image is behind the content */
-}
-
-.home__content {
-    z-index: 2; /* Ensure the content is above the image */
-    position: relative; /* Add this */
 }
 
 /* Media Query for Mobile View */
@@ -221,6 +250,7 @@ img {
 
     .home__button {
         margin-top: var(--mb-2); /* Add margin to the button */
+        z-index: 2; /* Ensure the button is above the image */
     }
 }
 .home {
@@ -536,14 +566,21 @@ img {
     cursor: pointer;
 }
 /*===== FOOTER =====*/
+/*===== FOOTER =====*/
 .footer {
     background-color: var(--dark-color);
     padding: 2rem 0;
 }
 
 .footer__container {
-    row-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
     text-align: center;
+}
+
+.footer__data {
+    margin-bottom: var(--mb-4);
 }
 
 .footer__title {
@@ -577,6 +614,17 @@ img {
     color: var(--first-color);
 }
 
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .footer__container {
+        grid-template-columns: 1fr; /* Stack footer items vertically */
+        text-align: center;
+    }
+
+    .footer__data {
+        margin-bottom: var(--mb-2);
+    }
+}
 /*===== MEDIA QUERIES =====*/
 @media screen and (max-width: 320px) {
     .home__img {
