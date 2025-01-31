@@ -187,7 +187,6 @@ img {
 }
 
 /*===== HOME =====*/
-/*===== HOME =====*/
 .home__container {
     height: calc(100vh - var(--header-height));
     row-gap: 1.5rem;
@@ -230,18 +229,6 @@ img {
     background-color: var(--first-color); /* Blue background */
     overflow: hidden;
 }
-
-.home__container {
-    height: calc(100vh - var(--header-height));
-    row-gap: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* Align content to the left */
-    text-align: left; /* Align text to the left */
-    padding-left: var(--mb-4); /* Add some padding to the left */
-}
-
 .home__content {
     display: flex;
     flex-direction: column;
