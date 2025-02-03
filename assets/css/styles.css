@@ -227,6 +227,7 @@ img {
     .home__button {
         margin-top: var(--mb-2); /* Add margin to the button */
     }
+
 }
 /*===== HOME =====*/
 .home__container {
@@ -258,6 +259,69 @@ img {
 
     .home__title {
         font-size: 4rem; /* Adjust font size for mobile */
+    }
+
+    .home {
+        position: relative;
+        background-color: var(--first-color); /* Blue background */
+        overflow: hidden;
+    }
+    .home__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .home__title {
+        position: absolute;
+        bottom: 150px;
+        font-size: var(--big-font-size);
+        color: var(--white-color);
+        line-height: 1.2;
+        margin-bottom: var(--mb-2);
+    }
+    .home__tagline {
+        text-align: left;
+        bottom: 0px;
+        top: auto;
+        font-size: var(--h2-font-size);
+        color: var(--white-color);
+        margin-bottom:var(--mb-2);
+        font-weight: var(--font-medium);
+    }
+    .home__button {
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        height: 50px;
+        cursor: pointer;
+    }
+    
+    .home__button:hover {
+        background-color: var(--dark-color);
+        color: var(--white-color);
+    }
+    
+    .home__scroll {
+        align-self: flex-end;
+        padding-bottom: var(--mb-4);
+    }
+    
+    .home__scroll-link {
+        writing-mode: vertical-lr;
+        transform: rotate(-180deg);
+        color: var(--white-color);
+    }
+    
+    .home__img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 290px;
     }
 }
 .home {
